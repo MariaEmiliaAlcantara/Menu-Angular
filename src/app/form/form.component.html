@@ -1,0 +1,29 @@
+<main>
+  <form id="acai-form" action="">
+    <h1>Monte seu Açaí</h1>
+    <h4 class="title">Tamanho:</h4>
+    <div class="input-container">
+      <input type="radio" id="300ml" name="size" />
+      <label for="300ml">300ml</label>
+      <input type="radio" id="500ml" name="size" />
+      <label for="500ml">500ml</label>
+    </div>
+    <h4 class="title">Adicionais (até {{ limitAdditionals }}):</h4>
+    <div class="input-container">
+      <div
+        class="checkboxContainer"
+        *ngFor="let additional of additionals; let i = index"
+      >
+        <input
+          #checkboxInput
+          type="checkbox"
+          [id]="additional.camelCaseName"
+          [disabled]="selectedItems >= limitAdditionals && !additional.checked"
+          (change)="countChecks(additional)"
+        />
+        <label [for]="additional.camelCaseName">{{ additional.name }}</label>
+      </div>
+    </div>
+    <button type="submit" class="buttonForm">Fazer o pedido</button>
+  </form>
+</main>

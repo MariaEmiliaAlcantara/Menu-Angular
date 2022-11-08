@@ -1,0 +1,32 @@
+#nav {
+  background-color: var(--yellow-400);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 15vh;
+}
+
+#nav #logo {
+  margin: auto;
+  margin-left: 0;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+#nav a {
+  color: var(--purple-800);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 12px;
+  transition: .5s;
+}
+
+#nav a:hover {
+  color: var(--white);
+}
+
+

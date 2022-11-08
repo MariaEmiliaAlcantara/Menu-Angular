@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Helvetica, sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+
+  --yellow-400: #EFD25D;
+ 
+
+  --purple-100: #C07589;
+  --purple-400: #79066B;
+  --purple-800: #352D45;
+
+}
