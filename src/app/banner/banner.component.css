@@ -2,9 +2,11 @@
   background-image: url("../../assets/banner.jpg");
   background-position: 0 -250px;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 50vw;
-  height: 85vh;
+  height: 88vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
 }
